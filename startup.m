@@ -1,5 +1,9 @@
-addpath(genpath('/Users/fyke/matlab'))
-cd /Users/fyke/Projects
+addpath(genpath('~/matlab'))
+if strcmp(strtrim(getComputerName()),'1282757')
+  cd ~/Projects
+else
+  cd ~
+end
 set(0,'DefaultFigurePaperPositionMode','auto')
 scnsize=get(0,'Monitorpositions');
 set(0,'DefaultFigurePosition', scnsize(1,:))
